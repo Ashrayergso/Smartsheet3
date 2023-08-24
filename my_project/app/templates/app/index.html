@@ -1,0 +1,34 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smartsheet and Excel Data Comparison</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Smartsheet and Excel Data Comparison</h1>
+        <div class="table-container">
+            <h2>Excel Data</h2>
+            <table id="excel-data">
+                <!-- Excel data will be populated here by script.js -->
+            </table>
+        </div>
+        <div class="table-container">
+            <h2>Smartsheet Data</h2>
+            <table id="smartsheet-data">
+                <!-- Smartsheet data will be populated here by script.js -->
+            </table>
+        </div>
+        <button id="update-button">Update</button>
+        <div class="table-container">
+            <h2>Result Data</h2>
+            <table id="result-data">
+                <!-- Result data will be populated here by script.js -->
+            </table>
+        </div>
+    </div>
+    <script src="{% static 'app/js/script.js' %}"></script>
+</body>
+</html>
+```
